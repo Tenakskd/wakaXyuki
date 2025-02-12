@@ -56,7 +56,7 @@
         autoplay
         poster="{% if proxy == 'True' %}/thumbnail?v={{ videoid }}{% else %}https://i3.ytimg.com/vi/{{ videoid }}/maxresdefault.jpg{% endif %}"
       >
-        <source src="{{ videourls }}" type="video/mp4" />
+        <source src="{{ videourls }}" type="video/webm" />
         読み込み失敗。ブラウザをアップデートしてどうぞ。
       </video>
     </div>
