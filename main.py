@@ -144,14 +144,7 @@ def get_replies(videoid,key):
 def getting_data(videoid):
     urls = [
         f"https://just-frequent-network.glitch.me/api/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v1/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v2/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v3/{urllib.parse.quote(videoid)}"
-        f"https://streamitedu.glitch.me/api/server/v4/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v5/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v6/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v7/{urllib.parse.quote(videoid)}",
-        f"https://streamitedu.glitch.me/api/server/v8/{urllib.parse.quote(videoid)}"
+        f"https://just-frequent-network.glitch.me/api/{urllib.parse.quote(videoid)}?token=wakameoishi"
     ]
     for url in urls:
         response = requests.get(url)
